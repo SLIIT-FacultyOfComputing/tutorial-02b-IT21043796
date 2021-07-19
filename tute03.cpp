@@ -3,7 +3,7 @@
 Convert the C program given below which calculates the Factorial of a number that you input from the keyboard to a C++ program.
 
 Please Note that the input command in C++ is std::cin. This is a representation of the Keyboard.*/
-
+/*
 #include <stdio.h>
 int main()
 {
@@ -21,3 +21,33 @@ int main()
     printf("Factorial of %d is %ld\n", no, fac);  
     return 0;
 }
+*/
+
+//begin the programme
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+  //variable declaration
+	int no;
+	long fac;
+	
+  //get the user inputs...
+	cout << "Enter the Number : ";
+	cin >> no;
+	
+	fac = 1;
+	
+	for (int r = no; r >= 1; r--)
+	{
+		fac *= r;
+	}
+	
+  //display the value.....
+	cout << "Factorial of " <<no << " is " << fac;
+	
+	return 0;
+}
+//end of the programme

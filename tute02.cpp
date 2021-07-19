@@ -11,7 +11,7 @@ OtRate = 1500
 Type = 3
 OtRate = 1700
 Please Note that the input command in C++ is std::cin. This is a representation of the Keyboard.*/
-
+/*
 #include <stdio.h>
 int main()
 {
@@ -42,3 +42,52 @@ int main()
   
    return 0;
 }
+*/
+
+
+//begin the programme
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+  //variable declaration
+	double salary, netSalary;
+	int etype, otHrs, otRate;
+	
+
+  //get the user inputs
+	cout << "Enter Employee type : ";
+	cin >> etype;
+	
+	cout << "Enter Salary : ";
+	cin >> salary;
+	
+	cout << "Enter OTHrs : ";
+	cin >> otHrs;
+	
+  //switch statements to calculate the values...
+	switch (etype)
+	{
+		case 1:
+			otRate = 1000;
+			break;
+		
+		case 2:
+			otRate = 1500;
+			break;
+			
+		default:
+			otRate = 1700;
+			break;	
+	}  
+	
+  //calculating and display the values....
+	netSalary = salary + otHrs * otRate;
+	
+	cout << "Net Salary is : " << netSalary;
+	
+	return 0;
+}
+//end of the programme....
