@@ -41,9 +41,9 @@ int main ()
 {
   //get the user inputs for n r....
 	int n, r;
- 	std::cout << "Enter a value for n ";
+ 	std::cout << "Enter a value for n : ";
  	std::cin >> n;
- 	std::cout << "Enter a value for r ";
+ 	std::cout << "Enter a value for r : ";
  	std::cin >> r;
  	std::cout << "nCr = ";
 
@@ -64,7 +64,7 @@ long Factorial (int r)
 		fac *= counter;
 	}
 	
-	return r;
+	return fac;
 }
 
 long nCr (int n, int r)
